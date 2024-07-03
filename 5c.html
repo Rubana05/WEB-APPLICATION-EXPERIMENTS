@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Calculator</title>
+<center>
+<script type="text/Javascript">
+function addition()
+{
+a=Number(document.getElementById ("n1").value);
+b=Number(document.getElementById ("n2").value);
+c=a+b;
+document.getElementById("t").innerText=c;
+}
+function subtraction()
+{
+a=Number(document.getElementById ("n1").value);
+b=Number(document.getElementById ("n2").value);
+c=a-b;
+document.getElementById("t").innerText=c;
+}
+function multiply()
+{
+a=Number(document.getElementById ("n1").value);
+b=Number(document.getElementById ("n2").value);
+c=a*b;
+document.getElementById("t").innerText=c;
+}
+function division()
+{
+a=Number(document.getElementById ("n1").value);
+b=Number(document.getElementById ("n2").value);
+c=a/b;
+document.getElementById("t").innerText=c;
+}
+function modulus()
+{
+a=Number(document.getElementById ("n1").value);
+b=Number(document.getElementById ("n2").value);
+c=a%b;
+document.getElementById("t").innerText=c;
+}
+</script>
+</head>
+<body>
+<form name="calculator">
+Number 1:<input type="text" name="first" id="n1"><br><br>
+Number 2:<input type="text" name="second" id="n2"><br><br>
+<input type="button" value="ADDITION" onclick="addition()">
+<input type="button" value="SUBTRACTION" onclick="subtraction()">
+<input type="button" value="MULTIPLY" onclick="multiply()">
+<input type="button" value="DIVISION" onclick="division()">
+<input type="button" value="MODULUS" onclick="modulus()"><br><br>
+<b>Get Result:<label name="total" id="t"><b><br>
+</form>
+</center>
+</body>  
+</html>

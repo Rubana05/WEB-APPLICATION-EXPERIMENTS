@@ -1,0 +1,24 @@
+<form id="productForm" action="submit_product.php" method="POST">
+  <label for="productName">Product Name:</label>
+  <input type="text" id="productName" name="productName" required><br><br>
+
+  <label for="description">Description:</label>
+  <textarea id="description" name="description" required></textarea><br><br>
+
+  <label for="quantity">Quantity of Cut T-Shirts:</label>
+  <input type="number" id="quantity" name="quantity" required><br><br>
+
+  <label for="price">Price:</label>
+  <input type="number" step="0.01" id="price" name="price" required><br><br>
+
+  <label for="paymentTerms">Payment Terms:</label>
+  <input type="text" id="paymentTerms" name="paymentTerms" required><br><br>
+
+  <label for="deliveryDay">Delivery Day:</label>
+  <input type="date" id="deliveryDay" name="deliveryDay" required><br><br>
+
+  <label for="additionalNotes">Additional Notes:</label>
+  <textarea id="additionalNotes" name="additionalNotes"></textarea><br><br>
+
+  <input type="submit" value="Submit">
+</form>
